@@ -1,4 +1,7 @@
 # sign-language-detector-flask-python
+#Kindly note that this project is an updated/modified version of an already existing Sign-language-translator made by Soham Prajapati. The project is available on Github at- https://github.com/SohamPrajapati/sign-language-detector-flask-python. However, due to deprecation of some packages, the code has now been modified to work easily. Minor changes have been commited too.
+
+#The purpose of this
 This project aims to create a sign language translator using machine learning techniques and Python programming. The application utilizes various modules, primarily Mediapipe, Landmark, and Random Forest algorithms to interpret and translate sign language gestures into text or spoken language.
 
 ## Project Overview
@@ -13,7 +16,7 @@ Sign language is a crucial form of communication for individuals with hearing im
   1. Installation:
   ```
    #Clone the repository
-   git clone https://github.com/SohamPrajapati/sign-language-detector-flask-python.git
+   git clone https://github.com/PratyushKumar16/sign-language-translator.git
    
    #Navigate to the project directory
    cd sign-language-detector-flask-python

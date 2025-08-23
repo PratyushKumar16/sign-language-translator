@@ -13,7 +13,7 @@ Sign language is a crucial form of communication for individuals with hearing im
   1. Installation:
   ```
    #Clone the repository
-   git clone https://github.com/SohamPrajapati/sign-language-detector-flask-python.git
+   git clone https://github.com/PratyushKumar16/sign-language-translator.git
    
    #Navigate to the project directory
    cd sign-language-detector-flask-python

@@ -17,7 +17,7 @@ Sign language is a crucial form of communication for individuals with hearing im
    git clone https://github.com/PratyushKumar16/sign-language-translator.git
    
    #Navigate to the project directory
-   cd sign-language-detector-flask-python
+   cd sign-language-translator
   ```
   
   2. **Install the required dependencies** using the following command:

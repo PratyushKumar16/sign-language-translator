@@ -10,6 +10,7 @@ Sign language is a crucial form of communication for individuals with hearing im
  - Machine learning translation: Employs Random Forest algorithm to classify and interpret gestures into corresponding text or spoken language.
   
 ## Usage
+ - Note that the app uses Python 9.3 Interpreter, since this version is quite outdated, it is recommended to use this program with the interpreter in a Virtual Environment (.venv).
   1. Installation:
   ```
    #Clone the repository
@@ -34,7 +35,7 @@ Sign language is a crucial form of communication for individuals with hearing im
    - Activate the camera for real-time gesture recognition.
    - Perform sign language gestures in front of the camera.
 
-
+![hand-signs-of-the-ASL-Language.png](hand-signs-of-the-ASL-Language.png)
 
 ## Contributing
  Contributions are welcome! If you'd like to contribute to this project, feel free to open issues, create pull requests, or reach out to discuss potential improvements.

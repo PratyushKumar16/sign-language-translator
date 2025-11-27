@@ -26,21 +26,21 @@ Sign language is a crucial form of communication for individuals with hearing im
     pip install -r requirements.txt
   ```
    2.1 **Note that there might be errors in installing packages
-     -The errors are likely going to be syntax based/syntax errors.
-     -The error is caused by JAX 0.4.30, which uses the match / case pattern matching syntax.
-     -That syntax requires Python 3.10+, but your venv is using Python 3.9, so it crashes.
+    - The errors are likely going to be syntax based/syntax errors.
+    - The error is caused by JAX 0.4.30, which uses the match / case pattern matching syntax.
+    - That syntax requires Python 3.10+, but your venv is using Python 3.9, so it crashes.
    2.2 **Fix
-     -You need to install an older version of jax that supports Python 3.9.
-     -Here’s what to do, inside your (.venv), in your bash terminal, run:
+    - You need to install an older version of jax that supports Python 3.9.
+    - Here’s what to do, inside your (.venv), in your bash terminal, run:
      ```
        pip install "jax==0.4.13" "jaxlib==0.4.13"
       ```
     - this version supports python 3.9
-    -Now install the remaining dependencies-
+    - Now install the remaining dependencies-
     ```
       pip install -r requirements.txt --no-deps
     ```
-    -this tells pip to install your listed packages without trying to upgrade jax again.
+    - this tells pip to install your listed packages without trying to upgrade jax again.
      
         
      

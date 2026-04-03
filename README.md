@@ -1,60 +1,60 @@
-# sign-language-detector-flask-python
-This project aims to create a sign language translator using machine learning techniques and Python programming. The application utilizes various modules, primarily Mediapipe, Landmark, and Random Forest algorithms to interpret and translate sign language gestures into text or spoken language.
+# Sign-Language-Translator (Python Edition)
 
-## Project Overview
-Sign language is a crucial form of communication for individuals with hearing impairments. This project focuses on bridging the communication gap by creating a tool that can interpret sign language gestures in real-time and convert them into understandable text or speech.
-  
-## Features
- - Real-time sign language recognition: Captures hand gestures using the Mediapipe library to track landmarks and movements.
- - Landmark analysis: Utilizes Landmark module to extract key points and gestures from hand movements.
- - Machine learning translation: Employs Random Forest algorithm to classify and interpret gestures into corresponding text or spoken language.
-  
-## Usage
- - Note that the app uses Python 9.3 Interpreter, since this version is quite outdated, it is recommended to use this program with the interpreter in a Virtual Environment (.venv).
-  1. Installation:
-  ```
-   #Clone the repository
+An interactive, real-time sign language translation system built using Python, Mediapipe, and Flask. This project enables seamless communication by translating hand gestures into text and speech, providing an accessible bridge between sign language and spoken languages.
+
+---
+
+## 🛠 Project Overview
+This repository features a refined implementation of a sign language recognition engine. Inspired by earlier research in hand-pose estimation, this version has been optimized with modern libraries and a robust Flask-based web interface. It uses **Mediapipe** for high-precision landmark detection and a **Random Forest** model for gesture classification.
+
+## 🚀 Key Features
+- **Real-Time Translation**: Translates ASL characters into text and speech with low latency.
+- **Web Dashboard**: An integrated Flask-based interface for easy interaction and display.
+- **Multi-Modal Output**: Supports both visual text feedback and **Text-to-Speech** (via pyttsx3).
+- **Improved Compatibility**: Updated dependency handling to support a wider range of Python environments.
+
+## 🏗 Tech Stack
+- **Python 3.9+**
+- **Mediapipe**: For hand landmark tracking.
+- **Flask**: To serve the application interface.
+- **OpenCV**: For camera feed processing.
+- **Scikit-learn**: For the classification model.
+- **pyttsx3**: For integrated text-to-speech output.
+
+## 🚦 Installation & Setup
+
+1. **Clone the repository**:
+   ```bash
    git clone https://github.com/PratyushKumar16/sign-language-translator.git
-   
-   #Navigate to the project directory
    cd sign-language-translator
-  ```
-  
-  2. **Install the required dependencies** using the following command:
+   ```
 
-  ```bash
-    pip install -r requirements.txt
-  ```
-   2.1 **Note that there might be errors in installing packages**
-   - The errors are likely going to be syntax based/syntax errors, caused by JAX 0.4.30, which uses the match / case pattern matching syntax.
-   - That syntax requires Python 3.10+, but your venv is using Python 3.9, so it crashes.
-     
-   2.2 **Fix**
-   - You need to install an older version of jax that supports Python 3.9.
-   - Here’s what to do, inside your (.venv), in your bash terminal, run:
-     
-     ```bash
-       pip install "jax==0.4.13" "jaxlib==0.4.13"
-      ```
-  - this version supports python 3.9
-  - Now install the remaining dependencies-
-    ```bash
-      pip install -r requirements.txt --no-deps
-    ```
-  - this tells pip to install your listed packages without trying to upgrade jax again.
-     
-        
-     
-  3. Run the application:
-  ```bash
-   python sign-language-detector-flask-python.py
-  ```
-   
-  4. Interact with the translator :
-   - Activate the camera for real-time gesture recognition.
-   - Perform sign language gestures in front of the camera.
+2. **Set up a virtual environment** (Highly recommended):
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
 
-![hand-signs-of-the-ASL-Language.png](hand-signs-of-the-ASL-Language.png)
+3. **Install Dependencies**:
+   *Note: To ensure compatibility with Python 3.9 environments, use the following sequence:*
+   ```bash
+   pip install "jax==0.4.13" "jaxlib==0.4.13"
+   pip install -r requirements.txt --no-deps
+   ```
 
-## Contributing
- Contributions are welcome! If you'd like to contribute to this project, feel free to open issues, create pull requests, or reach out to discuss potential improvements.
+## 🖥 How to Run
+1. **Launch the Web App**:
+   ```bash
+   python app.py
+   ```
+2. **Access the Interface**: Open your browser and navigate to `http://127.0.0.1:5000`.
+3. **Standalone Inference (Local Demo)**:
+   ```bash
+   python inference_classifier.py
+   ```
+
+## 📄 License
+This project is open-source and intended for educational and personal use. Special thanks to the community for providing the foundational concepts and research that inspired this implementation.
+
+---
+*Modified and maintained by Pratyush Kumar.*
